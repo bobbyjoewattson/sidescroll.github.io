@@ -26,11 +26,20 @@
             this.y = 0;
             this.velocity = 0;
           }
-          if(keyIsDown(83)) {
-            this.gravity += 10;
+          //down
+          if(keyIsDown(16)) {
+            this.gravity += 10  ;
           }
           else {
             this.gravity = 1;
+          }
+          //up
+          if(keyIsDown(87)) {
+            this.lift -= 10;
+            
+          }
+          else {
+            this.lift = -20;
           }
         }
       }//object ends here
